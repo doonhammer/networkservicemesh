@@ -66,25 +66,17 @@ This file should be created: networkservicemesh/conf/sample/vnf-dataplane.yaml
 This will define the DaemonSet to be run in each Pod.
 
 ### End User YAML File
-<<<<<<< HEAD
-<<<<<<< HEAD
-To use the plugin the end user will need to add the following to their Pod Yaml file. Need to provide an example how to integrate into a simple application.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fb0d4f4... added a sample directory structure for new networks
-=======
->>>>>>> 1153d93... added a sample directory structure for new networks
-**Todo not sure about this step**
+To use the plugin the end user will need to add the following to their Pod Yaml file. Need to provide an example how to integrate into a simple application. The example should include a source and destination Pod that enables network traffic over NSM
+
+**TODO** What is the end user YAML file.
 
 # Proposed Directory Structure
 The current directory structure for adding new plugins is not optimal as files are scattered over multiple parts of the tree. It is suggested that a normalized directory structure is developed to isolate all new plugins in their own tree.
 
 
 A proposed sample tree is shown below:
-
+```
 ┌────────┐ │
 │networks├─┤ ┌────────────────┐ │
 └────────┘ ├─┤simple-dataplane├─┤
@@ -134,23 +126,4 @@ A proposed sample tree is shown below:
                                                      ├─┤serverpod.yaml │
                                                      │ └───────────────┘
                                                      │
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                                     │
-=======
-**Todo not sure about this step**
->>>>>>> c10ccd8... added some more detail around end user case
-=======
-                                                     │
->>>>>>> fb0d4f4... added a sample directory structure for new networks
-=======
-To use the plugin the end user will need to add the following to their POD Yaml file.
-=======
-To use the plugin the end user will need to add the following to their Pod Yaml file. Need to provide an example how to integrate into a simple application.
->>>>>>> 49d685b... added some more detail around end user case
-
-**Todo not sure about this step**
->>>>>>> a4dc94f... adding documentation for extending NSM
-=======
-                                                     │
->>>>>>> 1153d93... added a sample directory structure for new networks
+```
